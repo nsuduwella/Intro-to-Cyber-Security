@@ -76,6 +76,79 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 5 IP addresses (5 hosts up) scanned in 9.01 seconds
 
 
+arch@archlinux ~/D/W/example-voting-app (main)> sudo nmap -sV -p- 172.18.0.2-6
+[sudo] password for arch: 
+Sorry, try again.
+[sudo] password for arch: 
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-02-06 02:46 +0200
+Nmap scan report for 172.18.0.2
+Host is up (0.0000020s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT     STATE SERVICE    VERSION
+5432/tcp open  postgresql PostgreSQL DB 9.6.0 or later
+MAC Address: 4E:C9:68:BB:7E:34 (Unknown)
+
+Nmap scan report for 172.18.0.3
+Host is up (0.0000030s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+6379/tcp open  redis   Redis key-value store 8.4.0
+MAC Address: DA:38:8C:2A:71:C2 (Unknown)
+
+Nmap scan report for 172.18.0.4
+Host is up (0.0000030s latency).
+All 65535 scanned ports on 172.18.0.4 are in ignored states.
+Not shown: 65535 closed tcp ports (reset)
+MAC Address: 76:8C:9D:7D:4D:5A (Unknown)
+
+Nmap scan report for 172.18.0.5
+Host is up (0.0000020s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+80/tcp   open  http    Node.js Express framework
+9229/tcp open  unknown
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9229-TCP:V=7.98%I=7%D=2/6%Time=69853A0D%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,65,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text
+SF:/html;\x20charset=UTF-8\r\n\r\nWebSockets\x20request\x20was\x20expected
+SF:\r\n")%r(HTTPOptions,65,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-
+SF:Type:\x20text/html;\x20charset=UTF-8\r\n\r\nWebSockets\x20request\x20wa
+SF:s\x20expected\r\n")%r(RTSPRequest,65,"HTTP/1\.0\x20400\x20Bad\x20Reques
+SF:t\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\nWebSockets\x20
+SF:request\x20was\x20expected\r\n")%r(RPCCheck,65,"HTTP/1\.0\x20400\x20Bad
+SF:\x20Request\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\nWebS
+SF:ockets\x20request\x20was\x20expected\r\n")%r(DNSVersionBindReqTCP,65,"H
+SF:TTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html;\x20cha
+SF:rset=UTF-8\r\n\r\nWebSockets\x20request\x20was\x20expected\r\n")%r(DNSS
+SF:tatusRequestTCP,65,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:
+SF:\x20text/html;\x20charset=UTF-8\r\n\r\nWebSockets\x20request\x20was\x20
+SF:expected\r\n")%r(Help,65,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent
+SF:-Type:\x20text/html;\x20charset=UTF-8\r\n\r\nWebSockets\x20request\x20w
+SF:as\x20expected\r\n")%r(SSLSessionReq,65,"HTTP/1\.0\x20400\x20Bad\x20Req
+SF:uest\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\nWebSockets\
+SF:x20request\x20was\x20expected\r\n")%r(TerminalServerCookie,65,"HTTP/1\.
+SF:0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html;\x20charset=UT
+SF:F-8\r\n\r\nWebSockets\x20request\x20was\x20expected\r\n")%r(TLSSessionR
+SF:eq,65,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html
+SF:;\x20charset=UTF-8\r\n\r\nWebSockets\x20request\x20was\x20expected\r\n"
+SF:)%r(Kerberos,65,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x2
+SF:0text/html;\x20charset=UTF-8\r\n\r\nWebSockets\x20request\x20was\x20exp
+SF:ected\r\n")%r(SMBProgNeg,65,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nCont
+SF:ent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\nWebSockets\x20request\x
+SF:20was\x20expected\r\n")%r(X11Probe,65,"HTTP/1\.0\x20400\x20Bad\x20Reque
+SF:st\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\nWebSockets\x2
+SF:0request\x20was\x20expected\r\n");
+MAC Address: 52:44:07:2F:2D:37 (Unknown)
+
+Nmap scan report for 172.18.0.6
+Host is up (0.0000030s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Werkzeug httpd 3.1.5 (Python 3.11.14)
+MAC Address: 5E:85:73:F4:E2:B9 (Unknown)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 5 IP addresses (5 hosts up) scanned in 22.47 seconds
 
 
 
