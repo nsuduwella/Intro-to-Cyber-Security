@@ -1,3 +1,4 @@
+1.
 ## Back-tier
 sudo nmap -sn 172.18.0.0/24
 
@@ -34,6 +35,48 @@ MAC Address: C2:23:54:35:80:59 (Unknown)
 Nmap scan report for 172.19.0.1
 Host is up.
 Nmap done: 256 IP addresses (3 hosts up) scanned in 3.71 seconds
+
+2.
+arch@archlinux ~/D/W/example-voting-app (main)> sudo nmap -sV 172.18.0.2-6
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-02-06 02:41 +0200
+Nmap scan report for 172.18.0.2
+Host is up (0.0000030s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE SERVICE    VERSION
+5432/tcp open  postgresql PostgreSQL DB 9.6.0 or later
+MAC Address: 4E:C9:68:BB:7E:34 (Unknown)
+
+Nmap scan report for 172.18.0.3
+Host is up (0.0000020s latency).
+All 1000 scanned ports on 172.18.0.3 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: DA:38:8C:2A:71:C2 (Unknown)
+
+Nmap scan report for 172.18.0.4
+Host is up (0.0000030s latency).
+All 1000 scanned ports on 172.18.0.4 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 76:8C:9D:7D:4D:5A (Unknown)
+
+Nmap scan report for 172.18.0.5
+Host is up (0.0000020s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Node.js Express framework
+MAC Address: 52:44:07:2F:2D:37 (Unknown)
+
+Nmap scan report for 172.18.0.6
+Host is up (0.0000020s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Werkzeug httpd 3.1.5 (Python 3.11.14)
+MAC Address: 5E:85:73:F4:E2:B9 (Unknown)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 5 IP addresses (5 hosts up) scanned in 9.01 seconds
+
+
+
 
 
 
