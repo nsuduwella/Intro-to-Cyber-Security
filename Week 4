@@ -1,1 +1,53 @@
+## Back-tier
+sudo nmap -sn 172.18.0.0/24
+
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-02-04 00:52 +0200
+Nmap scan report for 172.18.0.2
+Host is up (0.000055s latency).
+MAC Address: 46:15:AB:75:FA:FF (Unknown)
+Nmap scan report for 172.18.0.3
+Host is up (0.000015s latency).
+MAC Address: C2:54:73:B2:E8:FE (Unknown)
+Nmap scan report for 172.18.0.4
+Host is up (0.000010s latency).
+MAC Address: 6A:F0:D8:BB:9F:B9 (Unknown)
+Nmap scan report for 172.18.0.5
+Host is up (0.000012s latency).
+MAC Address: DA:62:B7:F3:E2:A4 (Unknown)
+Nmap scan report for 172.18.0.6
+Host is up (0.00016s latency).
+MAC Address: 8E:97:42:6D:0A:40 (Unknown)
+Nmap scan report for 172.18.0.1
+Host is up.
+Nmap done: 256 IP addresses (6 hosts up) scanned in 5.48 seconds
+
+# Front-tier
+sudo nmap -sn 172.19.0.0/24
+
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-02-04 00:52 +0200
+Nmap scan report for 172.19.0.2
+Host is up (0.000056s latency).
+MAC Address: 8A:1E:59:E1:9B:85 (Unknown)
+Nmap scan report for 172.19.0.3
+Host is up (0.00012s latency).
+MAC Address: C2:23:54:35:80:59 (Unknown)
+Nmap scan report for 172.19.0.1
+Host is up.
+Nmap done: 256 IP addresses (3 hosts up) scanned in 3.71 seconds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
